@@ -2,10 +2,12 @@
 mgmt_interface: brmgmt
 mgmt_bridge_ports:
   - dummy-mgmt
+  - enp7s0
 
 provision_oc_interface: brprov
 provision_oc_bridge_ports:
   - dummy-prov
+  - enp8s0
 
 provision_wl_interface: brcloud
 provision_wl_bridge_ports:
