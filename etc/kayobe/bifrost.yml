@@ -123,7 +123,78 @@
 # Inventory configuration.
 
 # Server inventory for Bifrost.
-#kolla_bifrost_servers:
+kolla_bifrost_servers:
+  controller0:
+    driver_info:
+      power:
+        ipmi_username: admin
+        ipmi_address: 192.168.5.1
+        ipmi_password: password
+    driver: ipmi
+    nics:
+      - mac: 52:54:00:7e:c2:c7
+    name: controller0
+  controller1:
+    driver_info:
+      power:
+        ipmi_username: admin
+        ipmi_address: 192.168.5.2
+        ipmi_password: password
+    driver: ipmi
+    nics:
+      - mac: 52:54:00:cf:ff:8e
+    name: controller1
+  controller2:
+    driver_info:
+      power:
+        ipmi_username: admin
+        ipmi_address: 192.168.5.3
+        ipmi_password: password
+    driver: ipmi
+    nics:
+      - mac: 52:54:00:10:9e:e8
+    name: controller2 
+  compute0:
+    driver_info:
+      power:
+        ipmi_username: admin
+        ipmi_address: 192.168.5.11
+        ipmi_password: password
+    driver: ipmi
+    nics:
+      - mac: 52:54:00:d2:2d:64
+    name: compute0
+  compute1:
+    driver_info:
+      power:
+        ipmi_username: admin
+        ipmi_address: 192.168.5.12
+        ipmi_password: password
+    driver: ipmi
+    nics:
+      - mac: 52:54:00:dc:7a:a0
+    name: compute1
+  compute2:
+    driver_info:
+      power:
+        ipmi_username: admin
+        ipmi_address: 192.168.5.13
+        ipmi_password: password
+    driver: ipmi
+    nics:
+      - mac: 52:54:00:b2:9f:87
+    name: compute2
+  storage0:
+    driver_info:
+      power:
+        ipmi_username: admin
+        ipmi_address: 192.168.5.21
+        ipmi_password: password
+    driver: ipmi
+    nics:
+      - mac: 52:54:00:f7:cb:62
+    name: storage0
+
 
 ###############################################################################
 # Dummy variable to allow Ansible to accept this file.
