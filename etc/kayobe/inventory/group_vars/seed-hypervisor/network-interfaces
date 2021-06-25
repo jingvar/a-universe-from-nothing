@@ -12,6 +12,7 @@ provision_oc_bridge_ports:
 provision_wl_interface: brcloud
 provision_wl_bridge_ports:
   - dummy-cloud
+  - enp9s0
 
 internal_interface: "{{ provision_wl_interface }}.{{ internal_vlan }}"
 
