@@ -133,7 +133,7 @@ kolla_bifrost_servers:
     driver: ipmi
     nics:
       - mac: 52:54:00:7e:c2:c7
-    name: controller0
+    name: controller1
   controller1:
     driver_info:
       power:
@@ -143,7 +143,7 @@ kolla_bifrost_servers:
     driver: ipmi
     nics:
       - mac: 52:54:00:cf:ff:8e
-    name: controller1
+    name: controller2
   controller2:
     driver_info:
       power:
@@ -153,7 +153,7 @@ kolla_bifrost_servers:
     driver: ipmi
     nics:
       - mac: 52:54:00:10:9e:e8
-    name: controller2 
+    name: controller3 
   compute0:
     driver_info:
       power:
@@ -163,7 +163,7 @@ kolla_bifrost_servers:
     driver: ipmi
     nics:
       - mac: 52:54:00:d2:2d:64
-    name: compute0
+    name: compute1
   compute1:
     driver_info:
       power:
@@ -173,7 +173,7 @@ kolla_bifrost_servers:
     driver: ipmi
     nics:
       - mac: 52:54:00:dc:7a:a0
-    name: compute1
+    name: compute2
   compute2:
     driver_info:
       power:
@@ -183,7 +183,7 @@ kolla_bifrost_servers:
     driver: ipmi
     nics:
       - mac: 52:54:00:b2:9f:87
-    name: compute2
+    name: compute3
   storage0:
     driver_info:
       power:
