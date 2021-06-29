@@ -184,7 +184,7 @@ kolla_bifrost_servers:
     nics:
       - mac: 52:54:00:b2:9f:87
     name: compute3
-  storage0:
+  storage1:
     driver_info:
       power:
         ipmi_username: admin
@@ -193,7 +193,7 @@ kolla_bifrost_servers:
     driver: ipmi
     nics:
       - mac: 52:54:00:f7:cb:62
-    name: storage0
+    name: storage1
 
 
 ###############################################################################
