@@ -21,10 +21,13 @@ overcloud_group_hosts_map:
     - compute1
     - compute2
     - compute3
-  storage:
+#  storage:
+#    - storage1
+#    - storage2
+#    - storage3
+  ignore:
     - storage1
-    - storage2
-    - storage3
+
 # To prevent some network issues you can choose to disable cloud-init
 #disable_cloud_init:
 
