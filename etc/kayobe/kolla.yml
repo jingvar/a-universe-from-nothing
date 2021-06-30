@@ -140,7 +140,7 @@
 #kolla_overcloud_inventory_custom_components:
 
 # Custom overcloud inventory containing a mapping from services to components.
-#kolla_overcloud_inventory_custom_services:
+kolla_overcloud_inventory_custom_services: "{{ lookup('template', kayobe_config_path ~ '/kolla/overcloud-services.j2') }}"
 
 # Full custom overcloud inventory contents. By default this will be the
 # concatenation of the top level, component, and service inventories.
@@ -217,11 +217,11 @@ kolla_overcloud_inventory_storage_groups: []
 #kolla_enable_cells:
 #kolla_enable_central_logging:
 #kolla_enable_chrony:
-#kolla_enable_cinder:
+kolla_enable_cinder: yes
 #kolla_enable_cinder_backend_hnas_nfs:
 #kolla_enable_cinder_backend_iscsi:
 #kolla_enable_cinder_backend_lvm:
-#kolla_enable_cinder_backend_nfs:
+kolla_enable_cinder_backend_nfs: yes
 #kolla_enable_cinder_backend_quobyte:
 #kolla_enable_cinder_backend_zfssa_iscsi:
 #kolla_enable_cinder_backup:
