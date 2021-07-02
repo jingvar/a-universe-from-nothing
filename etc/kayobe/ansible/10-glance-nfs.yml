@@ -1,0 +1,15 @@
+---
+- name: Mount NFS shares for glance
+  hosts: controllers
+  tasks:
+    - name: Just mount it
+      become: true
+      mount:
+        fstype: nfs
+        opts: defaults
+        dump: 0
+        passno: 0
+        state: mounted
+        src: 192.168.41.250:/var/glance
+        path: /var/glance
+

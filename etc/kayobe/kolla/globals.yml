@@ -11,3 +11,9 @@ openstack_service_workers: "1"
 # Prevent Docker from manipulating iptables. Docker changes the default policy
 # on the FORWARD chain, which prevents traffic from reaching instances.
 docker_disable_default_iptables_rules: true
+#glance_backend_file: yes
+#glance_api_hosts:
+#  - controller1
+#  - controller2
+glance_backend_file: "yes"
+glance_file_datadir_volume: /var/glance
