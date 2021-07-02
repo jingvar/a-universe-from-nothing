@@ -209,7 +209,7 @@ kolla_overcloud_inventory_storage_groups: []
 # Kolla feature flag configuration.
 
 #kolla_enable_aodh:
-#kolla_enable_barbican:
+kolla_enable_barbican: yes
 #kolla_enable_blazar:
 #kolla_enable_cadf_notifications:
 #kolla_enable_ceilometer:
@@ -237,7 +237,7 @@ kolla_enable_cinder_backend_nfs: yes
 #kolla_enable_glance:
 #kolla_enable_gnocchi:
 #kolla_enable_grafana:
-#kolla_enable_haproxy:
+kolla_enable_haproxy: yes
 #kolla_enable_heat:
 #kolla_enable_horizon:
 #kolla_enable_horizon_blazar:
@@ -274,7 +274,7 @@ kolla_enable_cinder_backend_nfs: yes
 #kolla_enable_iscsid:
 #kolla_enable_kafka:
 #kolla_enable_karbor:
-#kolla_enable_keepalived:
+kolla_enable_keepalived: yes
 #kolla_enable_keystone:
 #kolla_enable_kibana:
 #kolla_enable_kuryr:
