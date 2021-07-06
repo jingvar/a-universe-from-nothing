@@ -123,6 +123,7 @@ internal_allocation_pool_end: 192.168.37.254
 internal_vip_address: 192.168.37.2
 internal_vlan: 101
 internal_physical_network: cloud
+internal_fqdn: internal.my.cluster
 
 external_cidr: 192.168.38.0/24
 external_mtu: 1450

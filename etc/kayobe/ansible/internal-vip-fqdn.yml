@@ -1,0 +1,9 @@
+---
+- name: Add public FQDN to /etc/hosts
+  hosts: all
+  tasks:
+    - name: Add public fqdn and vip /etc/hosts
+      become: yes
+      lineinfile:
+        path: /etc/hosts
+        line: "{{ internal_vip_address }} {{ internal_fqdn  }}"
