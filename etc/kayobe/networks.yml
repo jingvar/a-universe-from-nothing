@@ -155,7 +155,7 @@ storage_mgmt_vlan: 106
 storage_mgmt_physical_network: cloud
 
 cloud_mtu: 9000
-
+ctl_bond_mtu: 9000
 ###############################################################################
 # Network virtual patch link configuration.
 
