@@ -13,10 +13,10 @@
 #dnf_use_local_mirror:
 
 # Mirror FQDN for Yum repos. Default value is 'mirror.centos.org'.
-#dnf_centos_mirror_host:
+dnf_centos_mirror_host: mirror.yandex.ru
 
 # Mirror directory for Yum CentOS repos. Default value is 'centos'.
-#dnf_centos_mirror_directory:
+dnf_centos_mirror_directory: rockylinux
 
 # Mirror FQDN for Yum EPEL repos. Default value is
 # 'download.fedoraproject.org'.

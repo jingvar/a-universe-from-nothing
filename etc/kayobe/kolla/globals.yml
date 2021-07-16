@@ -17,3 +17,17 @@ docker_disable_default_iptables_rules: true
 #  - controller2
 glance_backend_file: "yes"
 glance_file_datadir_volume: /var/glance
+docker_yum_url: "https://download.docker.com/linux/centos"
+
+host_os_distributions:
+  CentOS:
+    - "8"
+  Debian:
+    - "buster"
+  RHEL:
+    - "8"
+  Ubuntu:
+    - "bionic"
+    - "focal"
+  Rocky:
+    - "8"
