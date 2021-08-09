@@ -20,7 +20,7 @@
 #kolla_ironic_default_console_interface:
 
 # Specify the list of deploy interfaces to load during service initialization.
-#kolla_ironic_enabled_deploy_interfaces:
+kolla_ironic_enabled_deploy_interfaces: [ direct, ramdisk ]
 
 # Default deploy interface to be used for nodes that do not have
 # deploy_interface field set.

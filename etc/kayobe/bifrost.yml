@@ -56,7 +56,7 @@
 # Ironic configuration.
 
 # List of hardware types to enable for Bifrost's Ironic.
-#kolla_bifrost_enabled_hardware_types:
+#kolla_bifrost_enabled_hardware_types: [direct, ramdisk]
 
 # List of extra kernel parameters for Bifrost's Ironic PXE configuration.
 # Default is empty.
